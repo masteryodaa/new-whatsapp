@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import image from '../asset/logo.gif'
 
 class Logo extends Component {
     render() {
         return (
 
             <div class='d-flex justify-content-center'>
-                <img alt='' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png' style={{ width: 80, height: 80 }}></img>
+                <img alt='' src={image} style={{ width: 100, height: 100 }}></img>
             </div>
 
         )

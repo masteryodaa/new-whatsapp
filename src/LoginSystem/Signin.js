@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
+import Footer from '../Footer/Footer'
 import Button from './Button'
 import Logo from './Logo'
 
 class Signin extends Component {
     render() {
         return (
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-6 offset-3'>
-                        <div class='card '>
+
+            <div class='container mt-5'>
+                <div class='row d-flex justify-content-center'>
+                    <div class='col-11 col-md-6'>
+                        <div class='card'>
                             <div class='card-body py-5'>
                                 
                                 <Logo/>
@@ -20,7 +22,10 @@ class Signin extends Component {
                         </div>
                     </div>
                 </div>
+
+                <Footer/>
             </div>
+
         )
     }
 }
