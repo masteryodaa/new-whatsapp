@@ -10,7 +10,7 @@ class Signin extends Component {
             <div class='container mt-5'>
                 <div class='row d-flex justify-content-center'>
                     <div class='col-11 col-md-6'>
-                        <div class='card'>
+                        <div class='card shadow-lg'>
                             <div class='card-body py-5'>
                                 
                                 <Logo/>
