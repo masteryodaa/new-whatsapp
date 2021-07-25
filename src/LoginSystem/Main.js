@@ -6,12 +6,12 @@ import Signin from './Signin'
 class Login extends Component {
     render() {
         return (
-            <div>
+            <>
                 <LoginHead />
 
                 <Signin/>
                 
-            </div>
+            </>
         )
     }
 }

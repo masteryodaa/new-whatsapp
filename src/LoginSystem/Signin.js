@@ -14,7 +14,7 @@ class Signin extends Component {
                             <div class='card-body py-5'>
                                 
                                 <Logo/>
-
+                                
                                 <h1 class="display-4 my-3 text-center font1">Welcome to<br></br> newWhatsapp</h1>
                                 
                                 <Button/>

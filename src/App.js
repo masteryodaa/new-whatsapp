@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Login from './LoginSystem/Main';
+import HomePage from './HomeSystem/HomePage';
+import Main from './LoginSystem/Main';
 
 
 
 function App() {
   return (
-    <Login/>
-
+          <HomePage/>
   );
 }
 
