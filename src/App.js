@@ -1,12 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 import HomePage from './HomeSystem/HomePage';
-import Main from './LoginSystem/Main';
+import Login from './LoginSystem/Main'
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+
 
 
 
 function App() {
   return (
-          <HomePage/>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/" component={HomePage} />
+      </Switch>
+    </BrowserRouter>
+
+
   );
 }
 

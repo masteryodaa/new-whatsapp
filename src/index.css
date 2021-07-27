@@ -1,3 +1,16 @@
+@media only screen and (min-width: 768px) {
+  .side_drawer {
+    display:none;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .homepage_sidebar {
+    display:none;
+  }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -50,11 +63,12 @@ display: flex;
 
 .sidebar_head{
   display: flex;
-  flex:1;
   justify-content: space-between;
-  padding: 3px 1px;
+  padding:0;
+  margin: 0;
   background-color: #e9ecef;
-
+  height: 70px;
+  border-bottom: 1px solid #bfc0c0;
 }
 
 .head_icon{
@@ -66,6 +80,7 @@ display: flex;
   background-color: #d9d9d9;
   padding: 8px 6px;
   border-bottom: 1px solid #bfc0c0;
+  
 }
 
 .search_container{
@@ -135,3 +150,141 @@ overflow: scroll;
 {
 	background-color: gray;
 }
+
+.chatpanel_body::-webkit-scrollbar-track
+{
+	background-color: #e9ecef;
+}
+
+.chatpanel_body::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+.chatpanel_body::-webkit-scrollbar:hover
+{
+	width: 5px;
+	background-color: #F5F5F5;
+  padding-right: 1px;
+}
+
+.chatpanel_body::-webkit-scrollbar-thumb
+{
+	background-color: gray;
+}
+
+
+/* ChatPanel */
+.chatpanel{
+display:flex;
+flex-direction: column;
+height:100vh;
+overflow:hidden;
+}
+
+.chat_head_container{
+  position: sticky;
+
+
+}
+
+.chatpanel_head{
+padding:0 20px;
+
+display: flex;
+align-items: center;
+
+justify-content: space-between;
+margin: 0;
+background-color: #e9ecef;
+height: 70px;
+border-left: 1px solid #bfc0c0;
+}
+
+
+
+.chatpanel_head_info p, h5{
+  margin: 0;
+  padding:0;
+}
+
+.chatpanel_body{
+  overflow-y: scroll;
+  flex-grow: 1;
+  background-image: url('https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Background.max-2800x2800.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.chatslist{
+  padding:10px 15px
+}
+.chatslist h1{
+  padding:0;
+  margin:0;
+}
+
+.text_item{
+  background-color: #069e2d;
+  width: fit-content;
+  padding: 5px 10px;
+  color:white;
+  border-radius: 15px;
+  font-size: larger;
+  
+}
+
+.sender_name{
+  color: red;
+  bottom: 38px;
+  font-size: small;
+  margin-left: 8px;
+  font-weight:500;
+}
+
+
+
+.chatpanel_footer{
+  padding:15px;
+  background-color: #d9d9d9;
+  
+}
+
+.footer_container > input{
+  border: none;
+  width: 100%;
+}
+
+.footer_container > input:focus{
+  outline: none;
+}
+
+.footer_container > input:focus::placeholder {
+  color: transparent;
+} 
+
+
+
+
+.send_btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+/* Drawer */
+
+.offcanvas{
+  width: 80%;
+}
+.offcanvas-body{
+  overflow: hidden;
+}
+.ofc_btn:focus {
+  outline: none;
+  box-shadow: none;
+  }

@@ -7,7 +7,7 @@ function Sidebar() {
     return (
         <div class='sidebar'>
 
-            <div class='sidebar_head'>
+            <div class='sidebar_head_container'>
                 <SidebarHead />
             </div>
 

@@ -5,7 +5,7 @@
 
 To install all dependencies:
 
-### `npm install`
+### `npm init`
 
 To run the project, open the project directory and run:
 
