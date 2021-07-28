@@ -1,7 +1,11 @@
 # Getting Started with new-Whatsapp
 
-![Screenshot (16)](https://user-images.githubusercontent.com/72997705/127353145-ef090dcd-cbc1-4192-ae98-2d8bd2dc84cf.png)
-![Screenshot (14)](https://user-images.githubusercontent.com/72997705/127353175-deaa1a1b-0dd6-450b-9ee3-9a2586cad1eb.png)
+![Screenshot (16)](https://user-images.githubusercontent.com/72997705/127353145-ef090dcd-cbc1-4192-ae98-2d8bd2dc84cf.png) a <br />
+
+![Screenshot (14)](https://user-images.githubusercontent.com/72997705/127353175-deaa1a1b-0dd6-450b-9ee3-9a2586cad1eb.png) a <br />
+
+![image](https://user-images.githubusercontent.com/72997705/127353923-20389bcc-5231-443b-9763-cbe57b870253.png) a <br />
+
 
 
 ## Available Scripts
