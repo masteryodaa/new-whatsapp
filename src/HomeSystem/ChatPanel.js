@@ -7,6 +7,19 @@ import Drawer from './Drawer';
 
 function ChatPanel() {
 
+    const [value, setValue] = useState("")
+
+
+    const sendchat = (e)=>{
+        e.preventDefault();
+        console.log(value);
+        setValue('');
+    }
+
+    // const setValue = ()=>{
+
+    // }
+
     return (
         <div class='chatpanel'>
 
@@ -26,22 +39,20 @@ function ChatPanel() {
 
                 <div class='chatslist '>
                     <div class='sender_name'>yoda</div>
-                    <div class='text_item'>hi</div>
+                    <div class='text_item'>{value}</div>
                 </div>
             </div>
 
             <div class='chatpanel_footer '>
 
-                <div class='footer_container bg-white rounded-pill px-2 d-flex align-items-center'>
+                <form class='footer_container bg-white rounded-pill px-2 d-flex align-items-center'>
                     <div class='btn' id="emoji-trigger"><EmojiEmotionsOutlinedIcon style={{ fontSize: 35 }} /></div>
 
-                    <input class='search_input py-1 my-2 mx-3' placeholder='Type a message'></input>
+                    <input class='search_input py-1 my-2 mx-3' value={value} onChange={e=>setValue(e.target.value)} placeholder='Type a message'></input>
 
-                    <button class='btn send_btn'> <SendIcon style={{ fontSize: 35 }} /></button>
+                    <button class='btn send_btn' type='submit' onClick={sendchat}> <SendIcon style={{ fontSize: 35 }} /></button>
 
-                    {/* <Picker onEmojiClick={onEmojiClick} pickerStyle={{ width: '100%' }}/> */}
-
-                </div>
+                </form>
 
             </div>
 

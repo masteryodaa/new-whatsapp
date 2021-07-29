@@ -1,19 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
 import LoginHead from './LoginHead'
 import Signin from './Signin'
+import { auth, provider } from '../config'
 
+function Login() {
 
-class Login extends Component {
-    render() {
-        return (
-            <>
-                <LoginHead />
+    const signIn = ()=>{
+    auth.signInWithPopup(provider)
+        .then((result)=>console.log(result))
+        .catch((error)=>alert(error.message));
 
-                <Signin/>
-                
-            </>
-        )
-    }
+}
+    
+    return (
+        <div>
+            <LoginHead />
+            <Signin signIn={signIn}/>
+        </div>
+    )
 }
 
 export default Login
