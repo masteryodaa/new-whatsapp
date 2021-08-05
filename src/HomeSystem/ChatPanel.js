@@ -25,7 +25,7 @@ function ChatPanel() {
 
             <div class='sidebar_head chat_head_container'>
                 <div class='chatpanel_head'>
-                    <Avatar class='avatarImg' alt='' src='https://avatars.dicebear.com/api/initials/yoda.svg?r=50' />
+                    <Avatar class='avatarImg' alt='' src='https://avatars.dicebear.com/api/human/yoda.svg?r=50' />
                     <div class='chatpanel_head_info'>
                         <h5>Yoda</h5>
                         <p>Active Now</p>
